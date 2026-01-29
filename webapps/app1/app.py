@@ -22,4 +22,4 @@ def app(environ, start_response):
     html = template.render(title=title, message=message)
 
     start_response("200 OK", [("Content-Type", "text/html; charset=utf-8")])
-    return [html.encode("utf-8"
+    return [html.encode("utf-8")]
